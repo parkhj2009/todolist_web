@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="title">Todo List</div>
+
+        <div class="TodoContainer">
+            <!-- 입력창, 버튼 -->
+            <div class="addContainer">
+                <input id="todoInput" type="text" placeholder="할 일을 입력하세요" autofocus 
+                    onkeyup="if(event.key === 'Enter'){addTodo()}" required>
+                <button id="addButton" onclick="addTodo()">➕</button>
+            </div>
+
+            <!-- 할 일 목록 -->
+            <ul id="todoList" class="listContainer"></ul>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
+
